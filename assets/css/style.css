@@ -1,0 +1,256 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: 333;
+    line-height: 1.6;
+    margin: 0;
+    /*background-color: #B0E0E6;*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+/*container*/
+
+.cotainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+/*intro, тут вставил картинку*/
+
+.intro {
+    width: 100%;
+    height: 50vh;
+    margin-top: 90px;
+    background: url("../img/1.jpg") center no-repeat;
+
+}
+.intro_inner{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.intro_title{
+    font-size: 35px;
+    font-weight: 500;
+    max-width: 600px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1;
+    color: aliceblue;
+    position: absolute;
+    margin-left: -350px;
+    margin-top: 200px;
+}
+.intro_lefttitle{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1;
+    color: aliceblue;
+    max-width: 600px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+/*header*/
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-color: rgba(175, 238, 238, 0.5);
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 10;
+    right: 10;
+    z-index: 1000;
+}
+
+.header_logo {
+    font-size: 50px;
+    font-weight: 700;
+    color: cornflowerblue;
+    text-transform: uppercase;
+}
+
+.nav {
+    font-size: 24px;
+}
+
+.nav_link:after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 3px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: block;
+    transition: opacity 0.2s linear;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: cornflowerblue;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav_link:hover {
+    color: cornflowerblue;
+}
+
+.nav_link:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+
+
+/*search*/
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        max-width: 1900px;
+        border-radius: 5px 0 0 5px;
+        border: none;
+        margin-left: 6px;
+        margin-right: 6px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 6px;
+  width: 13%;
+  font-size: 25px;
+}
+
+}
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+sor: pointer;
+}
+/*центр*/
+.container1 {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(175, 238, 238, 0.5);
+}
+
+.text1, .text2 {
+  text-align: center;
+  width: 50%;
+  color: #fff;
+}
+
+.text1 {
+     font-size: 30px;
+     color: black;
+
+}
+
+.text2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    text-align: justify;
+    margin: 0 0 20px 0;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.text3 {
+     color: black;
+    text-align: center;
+}
+/*отзывы*/
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+   background-color: rgba(255, 255, 255, 0.8)
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 33.33%;
+}
+
+.box {
+  width: 33.33%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  padding: 10px 0 0 10px;
+}
+/*после отзывов*/
+
